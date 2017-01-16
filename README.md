@@ -7,7 +7,7 @@ It has [great potential](http://www.java2s.com/Code/Java/SWT-JFace-Eclipse/Catal
 
 **DWT** is a port of the **SWT** library for **D**, made by [jacob-carlborg](https://github.com/jacob-carlborg).
 
-Original repository for **DWT** is [lokated on GitHub](https://github.com/d-widget-toolkit/dwt). However, it has no dub package. 
+Original repository for **DWT** is [located on GitHub](https://github.com/d-widget-toolkit/dwt). However, it has no dub package. 
 And the building instructions for applications are not really trivial.
 
 This repository is made to be a small easily compilable GUI application using **DWT**.
