@@ -7,6 +7,11 @@ license "MIT License"
 mainSourceFile "src/app.d"
 targetPath "bin"
 
+importPaths "../dwt/imp" 
+
+//
+// <Windows-section>
+//
 /*
 dmd src/app.d -IC:\D\dwt\imp -JC:\D\dwt\res -L+C:\D\dwt\lib\ ^
   "-L+org.eclipse.swt.win32.win32.x86.lib" "-L+dwt-base.lib" ^
@@ -14,7 +19,6 @@ dmd src/app.d -IC:\D\dwt\imp -JC:\D\dwt\res -L+C:\D\dwt\lib\ ^
   -L/rc:res\resource.res
 */
 
-importPaths "../dwt/imp" 
 stringImportPaths "../dwt/res" platform="windows"
 lflags \
     `+..\dwt\lib\` \
@@ -23,7 +27,10 @@ lflags \
     "/SUBSYSTEM:WINDOWS" \
     `/rc:res\resource.res` \
     platform="windows"
-
+//
+// </Windows-section>
+// <Linux-section>
+//
 /*
 dmd src/app.d -I../dwt/imp -J../dwt/org.eclipse.swt.gtk.linux.x86/res -L-L../dwt/lib \
   -L-l:org.eclipse.swt.gtk.linux.x86.a \
@@ -45,3 +52,6 @@ lflags \
     `-lXdamage` `-lX11` `-lXfixes` `-lpango-1.0` `-lgobject-2.0` `-lgmodule-2.0` \
     `-ldl` `-lglib-2.0` `-lcairo` `-lgnomeui-2` `-lgnomevfs-2` \
     platform="posix"
+//
+// </Linux-section>
+//
