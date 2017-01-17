@@ -11,7 +11,6 @@ void main ()
     auto label = new Label(shell, 0);
     label.setText("Hello, DWT!");
     
-    //Присобачиваем к кнопке обработчик события (закрытие окна)
     Button button = new Button(shell, SWT.PUSH);
     button.setText("EXIT");
     button.addSelectionListener(new class SelectionAdapter {
