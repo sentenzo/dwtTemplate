@@ -1,10 +1,9 @@
-name "dwtTemplate"
+name "dwt-template"
 description "A minimal DWT application"
 authors "sentenzo"
 copyright "Copyright (c) 2017 sentenzo"
 license "MIT License"
 
-mainSourceFile "src/app.d"
 targetPath "bin"
 
 importPaths "../dwt/imp" 

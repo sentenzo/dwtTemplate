@@ -23,3 +23,8 @@ Works for **Windows**/**Linux**:
     $ dub
 
 For **Linux** some [additional packages](https://github.com/d-widget-toolkit/dwt#linux) may be required.
+
+There's also a demonstrational **DWT**-project with more widgets to look at. It runs with commands:
+
+    $ cd examples/bigdemo
+    $ dub
