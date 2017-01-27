@@ -91,7 +91,7 @@ void main ()
     }
 
     TableColumn[] columns = table.getColumns();
-    for (int i = 0, n = columns.length; i < n; i++) {
+    for (int i = 0, n = cast(int)columns.length; i < n; i++) {
       columns[i].pack();
     }
 
