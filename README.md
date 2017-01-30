@@ -15,7 +15,7 @@ This repository is made to be a small easily compilable GUI application using **
 ## Using
 Works for **Windows**/**Linux**:
 
-    $ git clone https://github.com/d-widget-toolkit/dwt.git
+    $ git clone --recursive https://github.com/d-widget-toolkit/dwt.git
     $ git clone https://github.com/sentenzo/dwtTemplate.git
     $ cd dwt
     $ rdmd build base swt 
